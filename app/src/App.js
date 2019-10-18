@@ -19,6 +19,9 @@ function App() {
   return (
     <div className="App">
       { Rescursive.render(m) }
+      <button onClick={(mEvent)=>{
+        console.log(Rescursive.cleanObject(m))
+      }}>sdf</button>
     </div>
   );
 }

@@ -12,11 +12,12 @@ class RosterComponent extends Component {
     }
     render() {
         return (
-            <div className={"Roster metadata" + this.props.count+ " " + Utils.isUndefinedS(this.props.p.className)}>
+            <div className={"Roster metadata" + this.props.count+ " metadata " + Utils.isUndefinedS(this.props.p.className)}>
                 {
                     this.props.p !== undefined &&
                     this.props.p.md !== undefined &&
                     this.props.p.md.map((currentValue, index, arr) => {
+                        currentValue.className = Utils.isUndefinedS(currentValue.className)+" metadata "
                         return Rescursive.render(currentValue, (index+this.props.count))
                     })
                 }

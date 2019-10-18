@@ -9,7 +9,9 @@ class TextBoxComponent extends Component {
     render() {
         return (
             <div className={"TextBox metadata" + this.props.count + " " + Utils.isUndefinedS(this.props.p.className)}>
-
+                <input type="text" onChange={(mEvent)=>{
+                    this.props.p.v = mEvent.target.value
+                }}/>
             </div>
         );
     }
