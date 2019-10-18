@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Rescursive from './components/recursive'
+import Metadata from './components/recursive/models/Metadata'
+
 function App() {
+
+  let m = new Metadata()
+  let m2 = new Metadata()
+  let m3 = new Metadata()
+  m.t = "Roster"
+  m2.t = "Knob"
+  m3.t = "TextBox"
+  m.md = [
+    m2,
+    m3
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      { Rescursive.render(m) }
     </div>
   );
 }
