@@ -45,12 +45,12 @@ function TestPage() {
         <H5> Teste </H5>
         <H6> Teste </H6>
         <P>Texto Texto Texto Texto Texto Texto Texto Texto Texto </P>
-        <AH1> Teste </AH1>
-        <AH2> Teste </AH2>
-        <AH3> Teste </AH3>
-        <AH4> Teste </AH4>
-        <AH5> Teste </AH5>
-        <AH6> Teste </AH6>
+        <AH1 to="/"> Link </AH1>
+        <AH2 to="/"> Link </AH2>
+        <AH3 to="/"> Link </AH3>
+        <AH4 to="/"> Link </AH4>
+        <AH5 to="/"> Link </AH5>
+        <AH6 to="/"> Link </AH6>
       </div>
     </>
   );

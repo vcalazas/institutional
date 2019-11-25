@@ -7,7 +7,7 @@ const Base = `
     color: #000;
 `;
 
-const BaseLink = `
+const BaseLink = styled(Link)`
     font-family: ${Font().title};
     text-decoration: none;
 `;
@@ -26,12 +26,13 @@ export const H4 = styled.h4` ${Base} ${styleH4}`;
 export const H5 = styled.h5` ${Base} ${styleH5}`;
 export const H6 = styled.h6` ${Base} ${styleH6}`;
 
-export const AH1 = styled(Link)` ${BaseLink} ${styleH1} `;
-export const AH2 = styled(Link)` ${BaseLink} ${styleH2} `;
-export const AH3 = styled(Link)` ${BaseLink} ${styleH3} `;
-export const AH4 = styled(Link)` ${BaseLink} ${styleH4} `;
-export const AH5 = styled(Link)` ${BaseLink} ${styleH5} `;
-export const AH6 = styled(Link)` ${BaseLink} ${styleH6} `;
+export const AH1 = styled(BaseLink)` ${styleH1} `;
+export const AH2 = styled(BaseLink)` ${styleH2} `;
+export const AH3 = styled(BaseLink)` ${styleH3} `;
+export const AH4 = styled(BaseLink)` ${styleH4} `;
+export const AH5 = styled(BaseLink)` ${styleH5} `;
+export const AH6 = styled(BaseLink)` ${styleH6} `;
+
 export const P = styled.p`
   font-family: ${Font().flowingText};
   font-size: 1.3em;
