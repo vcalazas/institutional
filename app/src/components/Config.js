@@ -1,5 +1,6 @@
 export const Colors = function () {
     return ({
+        text: "#000000",
         shape: "",
         primay: "#007BFF",
         secondary: "#6C757D",
@@ -8,6 +9,7 @@ export const Colors = function () {
         warning: "#FFC107",
         info: "#17A2B8",
 
+        textDark: "#ffffff",
         shapeDark: "",
         primayDark: "#0056B2",
         secondaryDark: "#5E666D",
